@@ -21,12 +21,9 @@ The following files can be used as is:
 - thehookup.rules
 
 For the Arduino sketch, please refer to the link above. The sketch works out of the box with my NodeMCU.
-In the sketch, you will need to update the MQTT broker setttings, the MQTT topics and your WIFI settings in order for it to work for your environent. I am using the following topics and you can copy and paste it in the sketch if you don't plan to change the topics in the things file:
+In the sketch, you will need to update the MQTT broker setttings, the MQTT topics and your WIFI settings in order for it to work for your environent. I am using the following topic-start and you can copy and replace it in the sketch if you don't plan to change the topics in the things file:
 
---
---
---
-
+#define USER_MQTT_CLIENT_NAME     "thehookup"           // Used to define MQTT topics, MQTT Client ID, and ArduinoOTA
 
 Below are two pictures of snapshots of the sitemap on my phone for this example. The first one shows the screen when scrolled up:
 
