@@ -15,5 +15,11 @@ Regarding OpenHab support, I am using the new MQTTv2 binding, with a things, ite
 
 Please give it a try and let me know your feedback or if you have any questions.
 
-Below are two pictures of snapshots of the sitemap on my phone for this example. 
+Below are two pictures of snapshots of the sitemap on my phone for this example. The first one shows the screen when scrolled up:
+
+![Scrolled Up](scrolledUpSmall.jpg)
+
+The second one shows the screen when scrolled down:
+
+![Scrolled Down](scrolledDownSmall.jpg)
 
