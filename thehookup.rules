@@ -1,0 +1,42 @@
+
+rule "Set Chance value for Lightning Effects"
+   when
+   	Item ChanceLightningTemp changed
+   	then
+ 		var Number tmp = (ChanceLightningTemp.state as DecimalType).intValue * 5
+   		sendCommand( ChanceLightningHookup, tmp )
+  	end
+
+rule "Set Chance value for Glitter Effects"
+   when
+   	Item ChanceGlitterTemp changed
+   	then
+ 		var Number tmp = (ChanceGlitterTemp.state as DecimalType).intValue * 255 / 100
+   		sendCommand( ChanceGlitterHookup, tmp )
+  	end
+
+rule "Set Modifier value for thehookup Effects"
+   when
+   	Item ModifierTemp changed
+   	then
+ 		var Number tmp = (ModifierTemp.state as DecimalType).intValue * 10
+   		sendCommand( ModifierHookup, tmp )
+  	end
+
+rule "Set Brightness value for thehookup LED"
+   when
+   	Item BrightnessTemp changed
+   	then
+		var Number tmp = (BrightnessTemp.state as DecimalType).intValue * 255 / 100
+   		sendCommand( BrightnessHookup, tmp )
+  	end
+
+rule "Reset Colors"
+   when 
+	Item ResetColors received command ON
+	then
+		sendCommand( RGB1Hookup, "0, 100, 100" )
+		sendCommand( RGB2Hookup, "120, 100, 100" )
+		sendCommand( RGB3Hookup, "240, 100, 100" )
+	end
+

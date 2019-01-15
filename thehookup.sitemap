@@ -1,0 +1,45 @@
+sitemap thehookup label="The Hookup"
+{
+    Frame label="60-LED strip"
+    {    
+        Switch item=LEDHookup
+    }
+        Frame label="Addon Effects" 
+    {
+        Switch item=LightningHookup
+        Slider item=ChanceLightningTemp
+        Switch item=GlitterHookup
+        Slider item=ChanceGlitterTemp
+        Colorpicker item=RGBGlitterHookup
+    }
+    Frame label="Color Selections"
+    {             
+        Colorpicker item=RGB1Hookup        
+        Colorpicker item=RGB2Hookup
+        Colorpicker item=RGB3Hookup
+        Switch item=ResetColors icon=movecontrol mappings=[ON="Reset Color 1, 2, 3"]
+    }    
+    Frame label="set Brightness"
+    {    
+        Slider item=BrightnessTemp
+    }
+    Frame label="Effect Modifier"
+    {    
+        Slider item=ModifierTemp
+    }
+    Frame label="LED strip Light Effects"
+    {    
+        Switch item=EffectHookup icon=movecontrol mappings=[Color_Chase="Color Chase"]
+        Switch item=EffectHookup icon=movecontrol mappings=[Color_Glitter="Color Glitter"]
+        Switch item=EffectHookup icon=movecontrol mappings=[Single_Race="Single Race"]
+        Switch item=EffectHookup icon=movecontrol mappings=[Double_Crash="Double Crash"]
+        Switch item=EffectHookup icon=movecontrol mappings=[Rainbow="Rainbow"]
+        Switch item=EffectHookup icon=movecontrol mappings=[Blocked_Colors="Blocked Colors"]
+        Switch item=EffectHookup icon=movecontrol mappings=[BPM="BPM"]
+        Switch item=EffectHookup icon=movecontrol mappings=[Twinkle="Twinkle"]
+        Switch item=EffectHookup icon=movecontrol mappings=[Fire="Fire"]
+        Switch item=EffectHookup icon=movecontrol mappings=[Fill_Solid="Fill Solid"]
+        Switch item=EffectHookup icon=movecontrol mappings=[Spooky_Eyes="Spooky Eyes"]
+        Switch item=EffectHookup icon=movecontrol mappings=[LED_Locator="LED Locator"]
+    }    
+}

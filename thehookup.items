@@ -1,0 +1,26 @@
+
+// TheHookup LED strip MQTTv2
+
+Switch LEDHookup "The Hookup" { channel="mqtt:topic:myMQTTBroker:thehookup:leds" }
+String EffectHookup "Effect: " { channel="mqtt:topic:myMQTTBroker:thehookup:effect" }
+
+Number ModifierHookup { channel="mqtt:topic:myMQTTBroker:thehookup:modifier" }
+Dimmer ModifierTemp "Modifier" <slider>
+
+Switch GlitterHookup "Glitter Effect" { channel="mqtt:topic:myMQTTBroker:thehookup:glitter" }
+Color RGBGlitterHookup "Glitter Color" <rgb> { channel="mqtt:topic:myMQTTBroker:thehookup:glittercolor" }
+Number ChanceGlitterHookup { channel="mqtt:topic:myMQTTBroker:thehookup:glitterchance" }
+Dimmer ChanceGlitterTemp "Glitter Chance"
+
+Switch LightningHookup "Lightning Effect" { channel="mqtt:topic:myMQTTBroker:thehookup:lightning" }
+Number ChanceLightningHookup { channel="mqtt:topic:myMQTTBroker:thehookup:lightningchance" }
+Dimmer ChanceLightningTemp "Lightning Chance"
+
+Number BrightnessHookup { channel="mqtt:topic:myMQTTBroker:thehookup:brightness" }
+Dimmer BrightnessTemp "Brightness" <light>
+
+Color RGB1Hookup "Color 1" <rgb> ["Lighting"] { channel="mqtt:topic:myMQTTBroker:thehookup:color1" }
+Color RGB2Hookup "Color 2" <rgb> { channel="mqtt:topic:myMQTTBroker:thehookup:color2" }
+Color RGB3Hookup "Color 3" <rgb> { channel="mqtt:topic:myMQTTBroker:thehookup:color3" }
+
+Switch ResetColors " " { autoupdate="false"}

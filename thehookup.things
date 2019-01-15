@@ -1,0 +1,22 @@
+Bridge mqtt:broker:myMQTTBroker [ host="192.168.1.10", secure=false, clientID="Openhab2.4MQTTClient" ]
+{
+    Thing topic thehookup "LED Light Strip" {
+    Channels:
+        Type switch : leds [ stateTopic="thehookup/powerState", commandTopic="thehookup/power", on="ON", off="OFF" ]
+        Type number : brightness [ stateTopic="thehookup/brightnessState", commandTopic="thehookup/brightness"]
+        Type number : modifier [ stateTopic="thehookup/modifierState", commandTopic="thehookup/modifier"]
+        Type string : effect [ stateTopic="thehookup/effectState", commandTopic="thehookup/effect"] 
+               
+        Type colorRGB : color1 [ stateTopic="thehookup/color1State", commandTopic="thehookup/color1"]
+        Type colorRGB : color2 [ stateTopic="thehookup/color2State", commandTopic="thehookup/color2"]
+        Type colorRGB : color3 [ stateTopic="thehookup/color3State", commandTopic="thehookup/color3"]        
+        
+        Type switch : glitter [ stateTopic="thehookup/glitter/state", commandTopic="thehookup/addEffects", on="Glitter On", off="Glitter Off" ]
+        Type number : glitterchance [ stateTopic="thehookup/glitterChanceState", commandTopic="thehookup/glitterChance"]
+        Type colorRGB : glittercolor [ stateTopic="thehookup/glitterColorState", commandTopic="thehookup/glitterColor" ]
+
+        Type switch : lightning [ stateTopic="thehookup/lightning/state", commandTopic="thehookup/addEffects", on="Lightning On", off="Lightning Off" ]
+        Type number : lightningchance [ stateTopic="thehookup/lightningChanceState", commandTopic="thehookup/lightningChance"]
+    }
+}
+
