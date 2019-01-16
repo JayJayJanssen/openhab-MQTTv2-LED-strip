@@ -2,7 +2,7 @@
 
 OpenHab MQTT v2 example for LED-strip using ESP8266 and Arduino 
 
-This example uses the Holiday LED 2.0 Arduino sketch developed by TheHookup, which originally comes with support for Home Assistant, and I added support for OpenHab 2.4. 
+This example uses the Holiday LED 2.0 Arduino sketch developed by [TheHookup](https://www.youtube.com/watch?v=90n8cZJcFaU), which originally comes with support for Home Assistant, and I added support for OpenHab 2.4. 
 
 For the original sketch and H.A. files, I refer to:
 https://github.com/thehookup/Holiday_LEDs_2.0
