@@ -15,6 +15,7 @@ Regarding OpenHab support, I am using the new MQTTv2 binding, with a things, ite
 
 You will need the following files:
 - thehookup.things --> modify the MQTT broker settings to be compliant with your MQTT broker
+
 The following files can be used as is:
 - thehoookup.items
 - thehookup.sitemap
